@@ -1,0 +1,44 @@
+package week2;
+import java.util.Scanner;
+package week2;
+import java.util.Scanner;
+
+public class Student {
+	public static void StudentAdd(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("----------------------------------------------\r\n"
+				+ "ID 이름 전공 학년 연구소ID 연구소명\r\n"
+				+ "----------------------------------------------\n");
+		System.out.print("추가할 학생의 ID, 이름, 전공, 학년, 연구소 ID, 연구소명을 입력하세요\n");
+		int id = scanner.nextInt();
+		String name = scanner.next();
+		String major = scanner.next();
+		int grade = scanner.nextInt();
+		int labId = scanner.nextInt();
+		String labName = scanner.next();
+		
+		System.out.print("----------------------------------------------\r\n"
+				+ "ID 이름 전공 학년 연구소ID 연구소명\r\n"
+				+ "----------------------------------------------\r\n");
+		System.out.print(id + " "+ name + " " + major + " " + grade + " " + labId + " " + labName + "\n");
+		System.out.print("----------------------------------------------");
+	}
+}
+
+public class ManagementMain {
+	public static void main(String[] args) {
+	      System.out.print("--------< 메 뉴 >--------\n");
+	      System.out.print("1. 학생 추가\n2. 교수 추가\n3. 학생목록 출력\n4. 교수목록 출력\n5. 전체 구성원 출력\n6. 연구소별 구성원 출력\n9. 화면정리\n0. 종료 ");
+	      System.out.print("-------------------------\n");
+	      System.out.println("선택>>");
+	      Scanner scanner = new Scanner(System.in);
+	      
+	      int answer = scanner.nextInt();
+	      switch(answer) {
+	      	case 1:
+	      		Student.StudentAdd(args);
+	      	case 2:
+	      		
+	      }
+}
+}
