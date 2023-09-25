@@ -1,7 +1,6 @@
 //미완 
 package week2;
-import java.util.Scanner;
-package week2;
+import week2.Sudent;
 import java.util.Scanner;
 
 public class Student {
